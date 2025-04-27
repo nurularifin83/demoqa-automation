@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demoqa_Sanity_Suite" parallel="tests" thread-count="1">
+    <groups>
+        <run>
+            <include name="sanity1" />
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="com.demoqa.customelisteners.MyListener"></listener>
+    </listeners>
+
+   <!-- <test name="Demoqa_TextBoxPage_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.TextBoxPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_RadioButtonPage_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.RadioButtonPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_WebTablesPage_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.WebTablesPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_ButtonsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.ButtonsPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_LinksPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.LinksPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_BrokenLinksImagesTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.BrokenLinksImagesTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_DownloadPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.elements.DownloadPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_PracticeFormPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.forms.PracticeFormTest"/>
+        </classes>
+    </test>-->
+    <test name="Demoqa_AlertsFrameWindowsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.alerts_frame_windows.AlertsFrameWindowsPageTest"/>
+        </classes>
+    </test>
+</suite>
