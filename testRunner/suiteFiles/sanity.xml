@@ -50,9 +50,34 @@
             <class name="com.demoqa.tests.forms.PracticeFormTest"/>
         </classes>
     </test>-->
-    <test name="Demoqa_AlertsFrameWindowsPageTest_Sanity_Test">
+    <!--<test name="Demoqa_BrowserWindowsPageTest_Sanity_Test">
         <classes>
-            <class name="com.demoqa.tests.alerts_frame_windows.AlertsFrameWindowsPageTest"/>
+            <class name="com.demoqa.tests.alerts_frame_windows.BrowserWindowsPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_AlertsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.alerts_frame_windows.AlertsPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_ModalDialogsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.alerts_frame_windows.ModalDialogsPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_AccordionPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.AccordionPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_AutoCompletePageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.AutoCompletePageTest"/>
+        </classes>
+    </test>-->
+    <test name="Demoqa_DatePickerPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.DatePickerPageTest"/>
         </classes>
     </test>
 </suite>

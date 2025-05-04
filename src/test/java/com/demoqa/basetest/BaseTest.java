@@ -3,9 +3,14 @@ package com.demoqa.basetest;
 import com.aventstack.extentreports.Status;
 import com.demoqa.base.BasePage;
 import com.demoqa.pages.*;
-import com.demoqa.pages.alerts_frame_windows.AlertsFrameWindowsPage;
+import com.demoqa.pages.alerts_frame_windows.AlertsPage;
+import com.demoqa.pages.alerts_frame_windows.BrowserWindowsPage;
+import com.demoqa.pages.alerts_frame_windows.ModalDialogsPage;
 import com.demoqa.pages.elements.*;
 import com.demoqa.pages.forms.PracticeForm;
+import com.demoqa.pages.widgets.AccordionPage;
+import com.demoqa.pages.widgets.AutoCompletePage;
+import com.demoqa.pages.widgets.DatePickerPage;
 import com.demoqa.reports.ExtentReportManager;
 import com.demoqa.testdatareaders.ExcelReader;
 import com.demoqa.utils.ConfigReader;
@@ -34,7 +39,12 @@ public class BaseTest {
     public BrokenLinksImagesPage brokenLinksImages;
     public DownloadPage downloadImagesPage;
     public PracticeForm practiceForm;
-    public AlertsFrameWindowsPage alertsFrameWindows;
+    public BrowserWindowsPage alertsFrameWindows;
+    public AlertsPage alertsPage;
+    public ModalDialogsPage modalDialogsPage;
+    public AccordionPage accordionPage;
+    public AutoCompletePage autoCompletePage;
+    public DatePickerPage datePickerPage;
 
     public ConfigReader configReader;
     public ExcelReader excelReader;
@@ -93,7 +103,12 @@ public class BaseTest {
         brokenLinksImages = new BrokenLinksImagesPage(getLocalDriver());
         downloadImagesPage = new DownloadPage(getLocalDriver());
         practiceForm = new PracticeForm(getLocalDriver());
-        alertsFrameWindows = new AlertsFrameWindowsPage(getLocalDriver());
+        alertsFrameWindows = new BrowserWindowsPage(getLocalDriver());
+        alertsPage = new AlertsPage(getLocalDriver());
+        modalDialogsPage = new ModalDialogsPage(getLocalDriver());
+        accordionPage = new AccordionPage(getLocalDriver());
+        autoCompletePage = new AutoCompletePage(getLocalDriver());
+        datePickerPage = new DatePickerPage(getLocalDriver());
 
         excelReader = new ExcelReader("./src/test/resources/test-data/"+configReader.getFieldsVerificationExcelName());
     }

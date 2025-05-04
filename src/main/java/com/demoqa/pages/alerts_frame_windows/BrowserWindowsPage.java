@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AlertsFrameWindowsPage extends BasePage {
+public class BrowserWindowsPage extends BasePage {
 
     // Call Utils
     private JavaScriptUtils scriptUtils;
 
     // Constructors
-    public AlertsFrameWindowsPage(WebDriver driver){
+    public BrowserWindowsPage(WebDriver driver){
         super(driver);
         PageFactory.initElements(driver, this);
         scriptUtils = new JavaScriptUtils(driver);

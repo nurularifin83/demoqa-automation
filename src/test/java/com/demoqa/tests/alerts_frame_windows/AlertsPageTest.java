@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AlertsFrameWindowsPageTest extends BaseTest {
+public class AlertsPageTest extends BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUpPage(){
@@ -13,10 +13,10 @@ public class AlertsFrameWindowsPageTest extends BaseTest {
     }
 
     @Test(groups = { "sanity1" })
-    public void testNewTabButton(){
-        alertsFrameWindows.clickOnBrowserWindows();
-        alertsFrameWindows.clickOnWindowButton();
-        Assert.assertEquals(homePage.getPageTitle(), "DEMOQA",
-                "\n Actual & Expected title do not match. \n");
+    public void testAlertsPage(){
+        alertsPage.clickOnAlerts();
+        alertsPage.clickOnAlertButton();
+        Assert.assertEquals(homePage.getPageTitle(), "",
+                "\n Actual & Expected page do not match! \n");
     }
 }
