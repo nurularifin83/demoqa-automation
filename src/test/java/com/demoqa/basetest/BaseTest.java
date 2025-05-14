@@ -8,9 +8,7 @@ import com.demoqa.pages.alerts_frame_windows.BrowserWindowsPage;
 import com.demoqa.pages.alerts_frame_windows.ModalDialogsPage;
 import com.demoqa.pages.elements.*;
 import com.demoqa.pages.forms.PracticeForm;
-import com.demoqa.pages.widgets.AccordionPage;
-import com.demoqa.pages.widgets.AutoCompletePage;
-import com.demoqa.pages.widgets.DatePickerPage;
+import com.demoqa.pages.widgets.*;
 import com.demoqa.reports.ExtentReportManager;
 import com.demoqa.testdatareaders.ExcelReader;
 import com.demoqa.utils.ConfigReader;
@@ -45,6 +43,10 @@ public class BaseTest {
     public AccordionPage accordionPage;
     public AutoCompletePage autoCompletePage;
     public DatePickerPage datePickerPage;
+    public SliderPagePage sliderPage;
+    public ProgressBarPage progressBarPage;
+    public TabsPage tabsPage;
+    public ToolTipsPage toolTipsPage;
 
     public ConfigReader configReader;
     public ExcelReader excelReader;
@@ -109,6 +111,10 @@ public class BaseTest {
         accordionPage = new AccordionPage(getLocalDriver());
         autoCompletePage = new AutoCompletePage(getLocalDriver());
         datePickerPage = new DatePickerPage(getLocalDriver());
+        sliderPage = new SliderPagePage(getLocalDriver());
+        progressBarPage = new ProgressBarPage(getLocalDriver());
+        tabsPage = new TabsPage(getLocalDriver());
+        toolTipsPage = new ToolTipsPage(getLocalDriver());
 
         excelReader = new ExcelReader("./src/test/resources/test-data/"+configReader.getFieldsVerificationExcelName());
     }

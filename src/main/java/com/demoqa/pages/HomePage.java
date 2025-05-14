@@ -55,6 +55,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement getWidgets(){
+        scriptUtils.scrollToElement(widgets);
         customWait.waitForElementToBeClickable(widgets);
         return widgets;
     }

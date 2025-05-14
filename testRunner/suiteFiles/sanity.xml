@@ -75,9 +75,29 @@
             <class name="com.demoqa.tests.widgets.AutoCompletePageTest"/>
         </classes>
     </test>-->
-    <test name="Demoqa_DatePickerPageTest_Sanity_Test">
+    <!--<test name="Demoqa_DatePickerPageTest_Sanity_Test">
         <classes>
             <class name="com.demoqa.tests.widgets.DatePickerPageTest"/>
+        </classes>
+    </test>-->
+   <!-- <test name="Demoqa_SliderPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.SliderPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_ProgressBarPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.ProgressBarPageTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="Demoqa_TabsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.TabsPageTest"/>
+        </classes>
+    </test>-->
+    <test name="Demoqa_ToolTipsPageTest_Sanity_Test">
+        <classes>
+            <class name="com.demoqa.tests.widgets.ToolTipsPageTest"/>
         </classes>
     </test>
 </suite>
